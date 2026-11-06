@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="790" viewBox="0 0 1800 790" font-family="DejaVu Sans">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity="0.22"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef2fb"/><stop offset="1" stop-color="#dfe6f6"/></linearGradient>
+    <g id="invoice">
+      <rect width="400" height="540" rx="6" fill="#fff" filter="url(#sh)"/>
+      <text x="30" y="58" font-size="26" font-weight="bold" fill="#1f2a44">FACTURE</text>
+      <text x="30" y="84" font-size="13" fill="#6b7590">N° 2026-0142 · 06/11/2026</text>
+      <text x="370" y="58" font-size="14" text-anchor="end" fill="#1f2a44" font-weight="bold">Atelier Dupont</text>
+      <text x="370" y="78" font-size="12" text-anchor="end" fill="#6b7590">12 rue des Lilas, Lyon</text>
+      <line x1="30" y1="112" x2="370" y2="112" stroke="#c9d0e4" stroke-width="2"/>
+      <g font-size="13" fill="#3a4561">
+        <text x="30" y="144">Prestation de conseil</text><text x="370" y="144" text-anchor="end">600,00 €</text>
+        <text x="30" y="176">Maintenance serveur</text><text x="370" y="176" text-anchor="end">240,00 €</text>
+        <text x="30" y="208">Hébergement annuel</text><text x="370" y="208" text-anchor="end">120,00 €</text>
+      </g>
+      <line x1="30" y1="232" x2="370" y2="232" stroke="#c9d0e4" stroke-width="2"/>
+      <text x="30" y="266" font-size="15" font-weight="bold" fill="#1f2a44">Total TTC</text>
+      <text x="370" y="266" font-size="15" font-weight="bold" text-anchor="end" fill="#1f2a44">960,00 €</text>
+      <g stroke="#e1e6f2" stroke-width="10" stroke-linecap="round">
+        <line x1="30" y1="330" x2="300" y2="330"/><line x1="30" y1="362" x2="340" y2="362"/><line x1="30" y1="394" x2="260" y2="394"/>
+      </g>
+    </g>
+  </defs>
+  <rect width="1800" height="790" fill="url(#bg)"/>
+  <text x="900" y="62" font-size="38" font-weight="bold" text-anchor="middle" fill="#1f2a44">Acquitter — le filigrane « Facture acquittée » en un glisser-déposer</text>
+
+  <!-- 1 : PDF d'origine -->
+  <g transform="translate(70,130)">
+    <use href="#invoice"/>
+    <text x="200" y="592" font-size="20" text-anchor="middle" fill="#3a4561" font-weight="bold">1. Votre facture PDF</text>
+  </g>
+
+  <!-- flèche 1 -->
+  <path d="M500 400 H560" stroke="#4f7cff" stroke-width="8" stroke-linecap="round"/><path d="M548 380 L572 400 L548 420" fill="none" stroke="#4f7cff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 2 : fenêtre de l'app -->
+  <g transform="translate(600,150)">
+    <g filter="url(#sh)">
+      <rect width="600" height="450" rx="14" fill="#f6f6f8"/>
+      <path d="M0 14 a14 14 0 0 1 14 -14 H586 a14 14 0 0 1 14 14 V46 H0 Z" fill="#e6e6ea"/>
+      <circle cx="24" cy="23" r="7" fill="#ff5f57"/><circle cx="48" cy="23" r="7" fill="#febc2e"/><circle cx="72" cy="23" r="7" fill="#28c840"/>
+      <text x="300" y="29" font-size="15" text-anchor="middle" fill="#4a4a52">Acquitter</text>
+    </g>
+    <rect x="30" y="70" width="540" height="270" rx="18" fill="#4f7cff" fill-opacity="0.10" stroke="#4f7cff" stroke-width="3" stroke-dasharray="11 8"/>
+    <!-- icône PDF qui tombe -->
+    <g transform="translate(262,100)">
+      <path d="M0 0 H52 L76 24 V96 H0 Z" fill="#fff" stroke="#b9c2dc" stroke-width="2.5"/><path d="M52 0 V24 H76" fill="#dbe1f2" stroke="#b9c2dc" stroke-width="2.5"/>
+      <rect x="10" y="52" width="46" height="22" rx="4" fill="#d11f1f"/><text x="33" y="68" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">PDF</text>
+    </g>
+    <text x="300" y="248" font-size="26" font-weight="bold" text-anchor="middle" fill="#1f2a44">Déposez vos PDF ici</text>
+    <rect x="215" y="272" width="170" height="40" rx="8" fill="#fff" stroke="#c9ccd6" stroke-width="1.5"/>
+    <text x="300" y="298" font-size="15" text-anchor="middle" fill="#2b2f3a">Choisir des PDF…</text>
+    <text x="30" y="376" font-size="14" fill="#6a6f7d">✓ facture - acquittée.pdf</text>
+    <text x="30" y="400" font-size="13" fill="#8a8f9d">Plusieurs fichiers à la fois · l'original reste intact</text>
+    <text x="300" y="572" font-size="20" text-anchor="middle" fill="#3a4561" font-weight="bold">2. Glissez-la dans l'app</text>
+  </g>
+
+  <!-- flèche 2 -->
+  <path d="M1230 400 H1290" stroke="#4f7cff" stroke-width="8" stroke-linecap="round"/><path d="M1278 380 L1302 400 L1278 420" fill="none" stroke="#4f7cff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 3 : résultat -->
+  <g transform="translate(1330,130)">
+    <use href="#invoice"/>
+    <g transform="translate(200,270) rotate(-30)" opacity="0.40">
+      <rect x="-152" y="-38" width="304" height="76" rx="10" fill="none" stroke="#c71a1a" stroke-width="5"/>
+      <text x="0" y="11" font-size="29" font-weight="bold" text-anchor="middle" fill="#c71a1a">Facture acquittée</text>
+    </g>
+    <text x="200" y="592" font-size="20" text-anchor="middle" fill="#3a4561" font-weight="bold">3. Le PDF acquitté, prêt à envoyer</text>
+  </g>
+
+  <text x="900" y="762" font-size="17" text-anchor="middle" fill="#6b7590">Fichier « nom - acquittée.pdf » créé à côté de l'original · texte conservé et sélectionnable · toutes les pages tamponnées</text>
+</svg>
