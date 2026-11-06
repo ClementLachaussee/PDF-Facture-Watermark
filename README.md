@@ -38,3 +38,7 @@ Le texte, l'opacité, l'angle, la taille et la couleur se règlent en haut de `m
 | `AppIcon.icns` | Icône |
 | `build.sh` | Compile et assemble `Acquitter.app` |
 | `docs/` | Image d'aperçu et sources de l'icône |
+
+---
+
+Réalisé avec [Claude](https://claude.ai) (Anthropic).
